@@ -1,0 +1,64 @@
+  <ng-container>
+<img src="../../assets/Header.png" alt="CoreIT_Logo" class="">
+    <mat-toolbar color=primary></mat-toolbar>
+    <div class="toolbar ">
+      <span>
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button><p>{{pageName}}</p></span>
+    </div>
+
+    <mat-sidenav-container class="sideContainer">
+      <mat-sidenav #sidenav mode="side" class="example-sidenav" [fixedInViewport]="options.value.fixed"
+        [fixedTopGap]="options.value.top" [fixedBottomGap]="options.value.bottom">
+
+        <mat-list>
+
+          <mat-list-item>
+            <a [routerLink]="['/dashboard']">
+              <button mat-icon-button>
+                <mat-icon>dashboard
+                </mat-icon>
+              </button>Dashboard</a>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <a [routerLink]="['/books']">
+              <button mat-icon-button>
+                <mat-icon>menu_book
+                  </mat-icon>
+              </button>Books</a>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <a [routerLink]="['/articles']">
+              <button mat-icon-button>
+                <mat-icon>insert_drive_file</mat-icon>
+              </button>Articles & Projects
+            </a>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <a [routerLink]="['/notifications']">
+              <button mat-icon-button>
+                <mat-icon>notifications</mat-icon>
+              </button>Notifications
+            </a>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+
+        </mat-list>
+
+      </mat-sidenav>
+      
+
+      <div class="container jumbotron border  border-right-0 border-bottom-0 rounded-lg">
+          <ng-content class="content"></ng-content>
+          <router-outlet></router-outlet>
+
+      </div>
+
+    </mat-sidenav-container>
+
+
+  </ng-container>

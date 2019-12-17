@@ -1,0 +1,33 @@
+.dot {
+  height: 80px;
+  width: 81px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: fixed;
+  margin: -6em auto auto 31.7rem;
+  border: 0.5px solid;
+  z-index: 1;
+}
+.mark {
+  font-size: xxx-large;
+  color: #5D4EE5;
+  position: fixed;
+  margin: -5.8rem 0px 0px 32.1rem;
+  background-color: transparent;
+z-index: 2;
+}
+
+.add {
+  font-size: xxx-large;
+  margin: -3em 0 0em 24em;
+  position: fixed;
+}
+
+.example-card {
+  max-width: 250px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
