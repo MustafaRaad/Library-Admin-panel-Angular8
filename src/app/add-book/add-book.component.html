@@ -1,1 +1,54 @@
-<p>add-book works!</p>
+<app-side-bar>
+  <!-- ------Up mark logo -->
+  <div class="dot" id="dot">
+    <span>
+      <div class="markdiv">
+        <a routerLink="/books" id="dot">
+          <mat-icon class="mark">menu_book</mat-icon>
+        </a>
+      </div>
+    </span>
+  </div>
+  <ng-container>
+<h2 class="text-center">Add book</h2>
+    <form class="example-container">
+        <mat-form-field appearance="outline">
+            <mat-label>Book's name</mat-label>
+            <input matInput placeholder="Placeholder">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Author</mat-label>
+            <input matInput placeholder="Placeholder">
+          </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-select placeholder="Category">
+            <mat-option value="option">1</mat-option>
+            <mat-option value="option">1</mat-option>
+            <mat-option value="option">1</mat-option>
+            <mat-option value="option">1</mat-option>
+            <mat-option value="option">1</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Author</mat-label>
+            <input matInput placeholder="Placeholder">
+          </mat-form-field>
+          
+          <mat-form-field appearance="outline">
+            <input matInput [matDatepicker]="picker1" placeholder="Angular forms" [formControl]="date">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="example-full-width" >
+            <textarea matInput placeholder="Description"></textarea>
+          </mat-form-field>
+
+          
+      </form>
+
+  </ng-container>
+</app-side-bar>

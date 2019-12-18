@@ -1,0 +1,45 @@
+.dot {
+    height: 80px;
+    width: 81px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    margin: -6em auto auto 31.7rem;
+    border: 0.5px solid;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .dot:hover {
+    .mark {
+      font-size:3.3rem;
+      padding-left: 6.8px;
+      padding-top: 3px;
+      transition: all;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+    }
+  }
+  
+  .markdiv {
+    position: fixed;
+    z-index: 2;
+    padding-top: 3px;
+    padding-left: 7px;
+    cursor: pointer;
+  
+  }
+  
+  .mark {
+    font-size: xxx-large;
+    color: #5D4EE5;
+    background-color: transparent;
+  }
+  .example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }

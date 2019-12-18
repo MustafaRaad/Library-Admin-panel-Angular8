@@ -5,8 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
 
-import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { LoaderService } from './services/loader/loader.service';
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
+import { LoaderInterceptor } from './services/loader/loader.interceptor';
 
 // components----
 import { AppComponent } from './app.component';
@@ -19,12 +22,13 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { AddBookComponent } from './add-book/add-book.component';
 import { AddArticleComponent } from './add-article/add-article.component';
 import { AddNotificationComponent } from './add-notification/add-notification.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent, 
-    SignInComponent, DashboardComponent, BooksComponent, ArticlesComponent, NotificationsComponent, AddBookComponent, AddArticleComponent, AddNotificationComponent,
+    SignInComponent, DashboardComponent, BooksComponent, ArticlesComponent, NotificationsComponent, AddBookComponent, AddArticleComponent, AddNotificationComponent, LoaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,9 @@ import { AddNotificationComponent } from './add-notification/add-notification.co
 
   ],
   exports: [SideBarComponent],
-  providers: [],
+  providers: [
+    LoaderService,
+    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

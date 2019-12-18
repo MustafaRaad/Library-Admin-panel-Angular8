@@ -5,14 +5,23 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { BooksComponent } from './books/books.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { AddBookComponent } from './add-book/add-book.component';
+import { AddArticleComponent } from './add-article/add-article.component';
+import { AddNotificationComponent } from './add-notification/add-notification.component';
 
 const routes: Routes = [
   { path: "",redirectTo:"signin" ,pathMatch: "full"},
   { path: "signin", component:SignInComponent },
   { path: "dashboard", component:DashboardComponent },
-  { path: "books", component:BooksComponent },
+  {path: "books", component:BooksComponent, children: [
+    // {path: "add-book",component: AddBookComponent}
+]
+  },
+  {path: "add-book",component: AddBookComponent},
   { path: "articles", component:ArticlesComponent },
   { path: "notifications", component:NotificationsComponent },
+  { path: "add-article", component:AddArticleComponent },
+  { path: "add-notification", component:AddNotificationComponent },
 ];
 
 @NgModule({

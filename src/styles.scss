@@ -12,5 +12,10 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-$colors: ("primary":#5D4EE5,
+$colors: ("primary":#5D4EE5,"warn":danger
   ) !default;
+
+  .loader {
+    z-index: 1;
+  }
+  

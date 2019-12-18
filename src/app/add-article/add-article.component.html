@@ -1,1 +1,32 @@
-<p>add-article works!</p>
+<app-side-bar>
+    <!-- ------Up mark logo -->
+    <div class="dot" id="dot">
+      <span>
+        <div class="markdiv">
+          <a routerLink="/books" id="dot">
+            <mat-icon class="mark">menu_book</mat-icon>
+          </a>
+        </div>
+      </span>
+    </div>
+    <ng-container>
+  
+  
+      <ng-form class="example-container">
+          <mat-form-field appearance="outline">
+              <mat-label>Outline form field</mat-label>
+              <input matInput placeholder="Placeholder">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+        
+          <mat-form-field>
+            <mat-select placeholder="Select">
+              <mat-option value="option">Option</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </ng-form>
+  
+    </ng-container>
+  </app-side-bar>
+  

@@ -1,11 +1,16 @@
 <app-side-bar>
-    <!-- ------Up mark logo -->
- <span class="dot"></span>
- <mat-icon class="mark">notifications</mat-icon>
-
-  <!-- ----------- Add icon -->
-  <i class="fa fa-plus-circle add"></i>
-
+  <!-- ------Up mark logo -->
+  <div class="dot" id="dot">
+    <span >
+      <div class="markdiv">
+      <a routerLink="/add-book"><mat-icon class="mark">notifications</mat-icon></a>
+      </div>
+    </span>
+    
+    <div class="add" id="dot">
+      <a routerLink="/add-book"><mat-icon>add_circle</mat-icon></a>
+    </div>
+  </div>
 
  <!-- --------Content cards -->
 
