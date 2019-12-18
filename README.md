@@ -1,6 +1,11 @@
+## CoreIT coder's
 # LibraryAdminPanel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+# Requirments 
+-->npm install @angular/material 
+-->npm install @angular/cdk
+
+This project was generated with Angular CLI version 8.3.20.
 
 ## Development server
 
