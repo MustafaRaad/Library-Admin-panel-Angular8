@@ -23,12 +23,14 @@ import { AddBookComponent } from './add-book/add-book.component';
 import { AddArticleComponent } from './add-article/add-article.component';
 import { AddNotificationComponent } from './add-notification/add-notification.component';
 import { LoaderComponent } from './loader/loader.component';
+import { UsersComponent } from './users/users.component';
+import { AddUserComponent } from './add-user/add-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent, 
-    SignInComponent, DashboardComponent, BooksComponent, ArticlesComponent, NotificationsComponent, AddBookComponent, AddArticleComponent, AddNotificationComponent, LoaderComponent,
+    SignInComponent, DashboardComponent, BooksComponent, ArticlesComponent, NotificationsComponent, AddBookComponent, AddArticleComponent, AddNotificationComponent, LoaderComponent, UsersComponent, AddUserComponent,
   ],
   imports: [
     BrowserModule,

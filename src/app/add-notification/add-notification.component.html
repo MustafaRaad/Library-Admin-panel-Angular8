@@ -1,1 +1,35 @@
-<app-side-bar></app-side-bar>
+<app-side-bar>
+  <!-- ------Up mark logo -->
+  <div class="dot" id="dot">
+    <span>
+      <div class="markdiv">
+        <a routerLink="/notifications" id="dot">
+          <mat-icon class="mark">notifications</mat-icon>
+        </a>
+      </div>
+    </span>
+  </div>
+  <!-- ------Up mark logo -->
+
+  <h2 class="text-center">التنبيهات</h2>
+  <form class="example-container"  dir="rtl">
+    <mat-form-field  >
+      <mat-label>العنوان</mat-label>
+      <input [formControl]="" type="text" matInput placeholder="العنوان">
+    </mat-form-field>
+
+
+    <mat-form-field  >
+      <mat-label>المحتوى</mat-label>
+      <textarea [formControl]="" matInput placeholder="المحتوى"></textarea>
+    </mat-form-field>
+    <div class="d-flex  justify-content-center mx-auto">
+
+            <mat-label   id="pic">صورة التنبيه :</mat-label>
+            <input [formControl]="" class="btn btn-success" type="file" id="pic">
+        </div>
+        <hr class="col-1">
+        <button [formControl]="" type="submit" class="btn btn-primary">نشر</button>
+        
+  </form>
+</app-side-bar>

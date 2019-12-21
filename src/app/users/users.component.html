@@ -1,0 +1,56 @@
+<app-side-bar>
+    <!-- ------Up mark logo -->
+    <div class="dot" id="dot">
+      <span >
+        <div class="markdiv">
+        <a routerLink="/add-user"><mat-icon class="mark">person</mat-icon></a>
+        </div>
+      </span>
+      
+      <div class="add" id="dot">
+        <a routerLink="/add-user"><mat-icon>add_circle</mat-icon></a>
+      </div>
+    </div>
+  
+    <!-- ----------Content cards and tabs  -->
+  <!-- Tabs -->
+        <!-- ----------------------------------Card's Container -flex -->
+        <div class="container d-flex row row-cols-1 row-cols-md-2" style="width: auto;">
+          <!-- card -->
+           <div class="col mb-5">
+             <div class="card">
+               <div class="card-body">
+                 <h5 class="card-title">User name: Null</h5>
+                 <hr>
+                 <h5 class="card-title">User E-mail: null</h5>
+               </div>
+               <a routerLink="/edit-book/:id" class="btn btn-primary btn-sm btn-block active editIcon" role="button" aria-pressed="true" >Edit user <mat-icon>edit</mat-icon> </a>
+             </div>
+           </div>
+       
+                <!-- card -->
+                <div class="col mb-5">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">User name: Null</h5>
+                        <hr>
+                        <h5 class="card-title">User E-mail: null</h5>
+                      </div>
+                      <a routerLink="/edit-book/:id" class="btn btn-primary btn-sm btn-block active editIcon" role="button" aria-pressed="true" >Edit user <mat-icon>edit</mat-icon> </a>
+                    </div>
+                  </div>
+              
+       
+       <!-- ----------------------------------card's container ends -->
+         </div>
+       
+  
+  
+  
+  
+  
+  
+  
+  
+  </app-side-bar>
+  

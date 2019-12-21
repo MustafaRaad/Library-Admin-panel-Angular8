@@ -3,30 +3,65 @@
     <div class="dot" id="dot">
       <span>
         <div class="markdiv">
-          <a routerLink="/books" id="dot">
-            <mat-icon class="mark">menu_book</mat-icon>
+          <a routerLink="/articles" id="dot">
+            <mat-icon class="mark">insert_drive_file</mat-icon>
           </a>
         </div>
       </span>
     </div>
-    <ng-container>
+
+    <h2 class="text-center">اضافة مقال او مشروع</h2>
+    <form class="example-container"  dir="rtl">
+      <mat-form-field  >
+        <mat-label>عنوان المقال او المشروع</mat-label>
+        <input [formControl]="" type="text" matInput placeholder="عنوان المقال او المشروع">
+      </mat-form-field>
   
+      <mat-form-field  >
+        <mat-label>المؤلف</mat-label>
+        <input [formControl]=""  type="text" matInput placeholder="المؤلف">
+      </mat-form-field>
   
-      <ng-form class="example-container">
-          <mat-form-field appearance="outline">
-              <mat-label>Outline form field</mat-label>
-              <input matInput placeholder="Placeholder">
-              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-              <mat-hint>Hint</mat-hint>
-            </mat-form-field>
-        
-          <mat-form-field>
-            <mat-select placeholder="Select">
-              <mat-option value="option">Option</mat-option>
-            </mat-select>
+      <mat-form-field  >
+        <mat-label>التصنيف</mat-label>
+        <mat-select [formControl]="" placeholder="التصنيف">
+          <mat-option value="option">برمجة</mat-option>
+          <mat-option value="option">تكنلوجيا</mat-option>
+          <mat-option value="option">رواية</mat-option>
+          <mat-option value="option">قصة</mat-option>
+          <mat-option value="option">شعر</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field  >
+        <mat-label>السعر</mat-label>
+        <input [formControl]="" matInput type="number" placeholder=" السعر بالدينار العراقي">
+        <span matSuffix>IQD</span>
+      </mat-form-field>
+  
+      <mat-form-field  >
+        <mat-label>الوصف</mat-label>
+        <textarea [formControl]="" matInput placeholder="الوصف"></textarea>
+      </mat-form-field>
+  
+      <mat-grid-list cols="2" rowHeight="5rem">
+  
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <mat-form-field style="width:100%">
+            <mat-label>رابط المقال</mat-label>
+            <input type="url" [formControl]="" matInput placeholder="رابط المقال">
           </mat-form-field>
-        </ng-form>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <mat-label id="pic">صورة واجهة المقال :</mat-label>
+          <input [formControl]="" class="btn btn-primary" type="file" id="pic">
+        </mat-grid-tile>
+      </mat-grid-list>
+
+      <hr class="col-1">
+      <button [formControl]="" type="submit" class="btn btn-primary">نشر</button>
   
-    </ng-container>
+    </form>
+  
   </app-side-bar>
   

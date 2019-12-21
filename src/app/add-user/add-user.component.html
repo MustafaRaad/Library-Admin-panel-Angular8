@@ -1,0 +1,50 @@
+<app-side-bar>
+    <!-- ------Up mark logo -->
+    <div class="dot" id="dot">
+      <span>
+        <div class="markdiv">
+          <a routerLink="/users" id="dot">
+            <mat-icon class="mark">person_add</mat-icon>
+          </a>
+        </div>
+      </span>
+    </div>
+    <!-- ------Up mark logo -->
+  
+    <h2 class="text-center">Add a user</h2>
+    <form class="example-container" >
+        <mat-form-field>
+            <input matInput type="text" placeholder="User name" name="" id="">
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Email" type="email" [formControl]="">
+            <mat-icon matSuffix>email</mat-icon>
+            <!-- <mat-error *ngIf="FormControl.hasError('email') && !FormControl.hasError('required')">
+              Please enter a valid email address
+            </mat-error>
+            <mat-error *ngIf="FormControl.hasError('required')">
+              Email is <strong>required</strong>
+            </mat-error> -->
+          </mat-form-field>
+  
+  
+          <mat-form-field class="item">
+            <input matInput placeholder="Enter your password" [type]="Hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="Hide = !Hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="Hide">
+              <mat-icon>{{Hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+
+          <mat-form-field class="item">
+            <input matInput placeholder="Confirm your password" [type]="Hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="Hide = !Hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="Hide">
+              <mat-icon>{{Hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+          <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </app-side-bar>

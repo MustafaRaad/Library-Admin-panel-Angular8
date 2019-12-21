@@ -1,108 +1,52 @@
 <app-side-bar>
   <!-- ------Up mark logo -->
-  <div class="dot" id="dot">
+  <div class="dot " id="dot">
     <span >
       <div class="markdiv">
-      <a routerLink="/add-book"><mat-icon class="mark">notifications</mat-icon></a>
+      <a routerLink="/add-notification"><mat-icon class="mark">notifications</mat-icon></a>
       </div>
     </span>
     
     <div class="add" id="dot">
-      <a routerLink="/add-book"><mat-icon>add_circle</mat-icon></a>
+      <a routerLink="/add-notification"><mat-icon>add_circle</mat-icon></a>
     </div>
   </div>
 
  <!-- --------Content cards -->
 
- <div class="row row-cols-1 row-cols-md-3">
 
+    <mat-card class="row" style="display: flex;">
+      <img class="col-1 avatarImg border" src="../../assets/Coreit.png" alt="">
+      <div class="col-11">
 
-    <div class="col mb-4">
-      <div class="card">
-        <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
-        </div>
-        <div class="card-footer text-center">
-          <small class="text-dark row">
-            <h6 class="h6">Category:</h6>Programming
-          </small>
-        </div>
-        <div class="card-footer">
-          <small class="text-dark row">
-            <h6 class="h6">Date puplished:</h6>2019-Dec-20
-          </small>
-        </div>
+        <mat-card-header class="h5">Simple card </mat-card-header>
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
       </div>
-    </div>
-
-    <div class="col mb-4">
-      <div class="card">
-        <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content.</p>
-        </div>
-        <div class="card-footer text-center">
-          <small class="text-dark row">
-            <h6 class="h6">Category:</h6>Programming
-          </small>
-        </div>
-        <div class="card-footer">
-          <small class="text-dark row">
-            <h6 class="h6">Date puplished:</h6>2019-Dec-20
-          </small>
-        </div>
-      </div>
-    </div>
-
-    <div class="col mb-4">
-      <div class="card">
-        <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content.</p>
-        </div>
-        <div class="card-footer text-center">
-          <small class="text-dark row">
-            <h6 class="h6">Category:</h6>Programming
-          </small>
-        </div>
-        <div class="card-footer">
-          <small class="text-dark row">
-            <h6 class="h6">Date puplished:</h6>2019-Dec-20
-          </small>
-        </div>
-      </div>
-    </div>
-
-    <div class="col mb-4">
-      <div class="card">
-        <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content.</p>
-        </div>
-        <div class="card-footer text-center">
-          <small class="text-dark row">
-            <h6 class="h6">Category:</h6>Programming
-          </small>
-        </div>
-        <div class="card-footer">
-          <small class="text-dark row">
-            <h6 class="h6">Date puplished:</h6>2019-Dec-20
-          </small>
-        </div>
-      </div>
-    </div>
-
-  </div>
+      </mat-card>
+      <hr class="col-md-6">
  
+      <mat-card class="row" style="display: flex;">
+        <img class="col-1 avatarImg border" src="../../assets/Coreit.png" alt="">
+        <div class="col-11">
+  
+          <mat-card-header class="h5">Simple card </mat-card-header>
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+              bred for hunting.
+            </p>
+          </mat-card-content>
+        </div>
+        </mat-card>
+        <hr class="col-md-6">
+   
 </app-side-bar>
 
 
